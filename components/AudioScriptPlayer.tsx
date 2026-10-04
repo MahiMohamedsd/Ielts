@@ -16,6 +16,7 @@ export default function AudioScriptPlayer({
 }) {
   const { t } = useLang();
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const stoppedRef = useRef(true);
   const [mp3Available, setMp3Available] = useState<boolean | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0); // 0-100
@@ -43,8 +44,13 @@ export default function AudioScriptPlayer({
     };
   }, [audioSrc]);
 
+  // Stop any speech the moment this player leaves the screen (tab switch, navigation, unmount).
+  // stoppedRef must flip to true BEFORE cancel() is called: Chrome fires the just-cancelled
+  // utterance's onend handler as a side effect of cancel(), which would otherwise immediately
+  // queue up and speak the next line with no component left alive to ever stop it again.
   useEffect(() => {
     return () => {
+      stoppedRef.current = true;
       if (typeof window !== "undefined" && "speechSynthesis" in window) {
         window.speechSynthesis.cancel();
       }
@@ -62,7 +68,9 @@ export default function AudioScriptPlayer({
 
   function playFallback() {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+    stoppedRef.current = true;
     window.speechSynthesis.cancel();
+    stoppedRef.current = false;
     setIsPlaying(true);
     setLineIndex(0);
 
@@ -74,6 +82,7 @@ export default function AudioScriptPlayer({
 
     let i = 0;
     const speakNext = () => {
+      if (stoppedRef.current) return;
       if (i >= script.length) {
         setIsPlaying(false);
         setHasPlayed(true);
@@ -88,11 +97,13 @@ export default function AudioScriptPlayer({
       utter.rate = 0.95;
       setLineIndex(i);
       utter.onend = () => {
+        if (stoppedRef.current) return;
         i += 1;
         setProgress(Math.round((i / script.length) * 100));
         speakNext();
       };
       utter.onerror = () => {
+        if (stoppedRef.current) return;
         i += 1;
         speakNext();
       };
@@ -101,12 +112,23 @@ export default function AudioScriptPlayer({
     speakNext();
   }
 
+  function stopFallback() {
+    stoppedRef.current = true;
+    if (typeof window !== "undefined" && "speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+    }
+    setIsPlaying(false);
+  }
+
   function handlePlayPause() {
     if (disabled) return;
     if (isPlaying) {
-      if (mp3Available) audioRef.current?.pause();
-      else window.speechSynthesis.pause();
-      setIsPlaying(false);
+      if (mp3Available) {
+        audioRef.current?.pause();
+        setIsPlaying(false);
+      } else {
+        stopFallback();
+      }
       return;
     }
     if (mp3Available) playMp3();

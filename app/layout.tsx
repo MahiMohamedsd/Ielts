@@ -3,6 +3,7 @@ import { Poppins, Lora } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import BottomNav from "@/components/BottomNav";
+import RouteAudioGuard from "@/components/RouteAudioGuard";
 import { LanguageProvider } from "@/lib/i18n";
 
 const poppins = Poppins({
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${poppins.variable} ${lora.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-paper text-ink">
         <LanguageProvider>
+          <RouteAudioGuard />
           <Header />
           <main className="flex-1 pb-16 md:pb-0">{children}</main>
           <BottomNav />
