@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #00336a;
+  --primary-dark: #001f42;
+  --accent: #b50f27;
+  --accent-soft: #f3dadd;
+  --paper: #fbf8f2;
+  --ink: #1a2233;
+  --muted: #5b5a54;
+  --rule: #dcd6c8;
+
+  --tip-bg: #fbeeee;
+  --tip-border: #b50f27;
+  --mistake-bg: #f6d9dc;
+  --mistake-border: #7a0c1c;
+  --example-bg: #f1efe7;
+  --example-border: #8a8372;
+  --vocab-bg: #e9efff;
+  --vocab-border: #00336a;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+
+  --color-tip-bg: var(--tip-bg);
+  --color-tip-border: var(--tip-border);
+  --color-mistake-bg: var(--mistake-bg);
+  --color-mistake-border: var(--mistake-border);
+  --color-example-bg: var(--example-bg);
+  --color-example-border: var(--example-border);
+  --color-vocab-bg: var(--vocab-bg);
+  --color-vocab-border: var(--vocab-border);
+
+  --font-heading: var(--font-poppins), "Segoe UI", Arial, sans-serif;
+  --font-body: var(--font-lora), Georgia, "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-heading);
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+.box-tip {
+  background: var(--tip-bg);
+  border-left: 4px solid var(--tip-border);
+}
+[dir="rtl"] .box-tip {
+  border-left: none;
+  border-right: 4px solid var(--tip-border);
+}
+
+.box-mistake {
+  background: var(--mistake-bg);
+  border-left: 4px solid var(--mistake-border);
+}
+[dir="rtl"] .box-mistake {
+  border-left: none;
+  border-right: 4px solid var(--mistake-border);
+}
+
+.box-example {
+  background: var(--example-bg);
+  border-left: 4px solid var(--example-border);
+}
+[dir="rtl"] .box-example {
+  border-left: none;
+  border-right: 4px solid var(--example-border);
+}
+
+.box-vocab {
+  background: var(--vocab-bg);
+  border-left: 4px solid var(--vocab-border);
+}
+[dir="rtl"] .box-vocab {
+  border-left: none;
+  border-right: 4px solid var(--vocab-border);
+}
+
+@media print {
+  header, footer, nav, .no-print {
+    display: none !important;
+  }
+}

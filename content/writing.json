@@ -1,0 +1,92 @@
+{
+  "task1": {
+    "label": "Task 1",
+    "models": [
+      {
+        "id": "a",
+        "title": "Model A: bar chart",
+        "note": "matches the book's practice task topic",
+        "prompt": "The chart below shows the percentage of people using the internet daily, by age group, in Algeria in 2015 and 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+        "chart": {
+          "type": "bar",
+          "categories": ["18–24", "25–34", "35–44", "45–54", "55+"],
+          "series": [
+            { "name": "2015", "data": [45, 38, 24, 14, 6] },
+            { "name": "2023", "data": [91, 84, 68, 45, 22] }
+          ]
+        },
+        "modelAnswer": [
+          "The bar chart compares the share of each age group who used the internet daily in Algeria in 2015 and in 2023. Overall, daily internet use rose sharply across every age group, though the increase was far more dramatic among younger people.",
+          "Among 18–24 year-olds, daily use climbed from 45% in 2015 to 91% in 2023, nearly doubling. The 25–34 age group followed a similar pattern, rising from 38% to 84%. By contrast, the 55+ category rose only from 6% to 22%, remaining by far the least connected group throughout. In every age group, 2023 figures were higher than 2015, but the gap between the youngest and oldest users widened rather than narrowed."
+        ],
+        "whyScoresWell": {
+          "en": "Paraphrases the title (doesn't copy it), gives one overview sentence before any numbers, picks 2–3 comparisons rather than listing every figure, uses real numbers as evidence, stays purely descriptive with zero opinion.",
+          "ar": "يعيد صياغة العنوان (لا ينسخه)، يقدّم جملة عامة واحدة قبل ذكر أي أرقام، يختار 2-3 مقارنات بدلاً من سرد كل رقم، يستخدم أرقامًا حقيقية كدليل، ويبقى وصفيًا بحتًا دون أي رأي شخصي."
+        }
+      },
+      {
+        "id": "b",
+        "title": "Model B: process diagram",
+        "prompt": "The diagram below shows the process by which tap water is treated before it reaches homes. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+        "process": {
+          "type": "process",
+          "stages": [
+            "Water drawn from a river/reservoir",
+            "Screening (removes debris)",
+            "Coagulation & sedimentation (chemicals added, particles settle)",
+            "Filtration (sand and gravel)",
+            "Disinfection (chlorine added)",
+            "Storage and distribution to homes via pipes"
+          ]
+        },
+        "modelAnswer": [
+          "The diagram illustrates the stages involved in treating tap water before it is supplied to households.",
+          "Overall, the process consists of six main stages, beginning with raw water collection and ending with distribution to homes, during which impurities are progressively removed and the water is disinfected.",
+          "The process begins when water is drawn from a river or reservoir and passed through a screening stage, where large debris such as leaves and sediment is removed. Next, chemicals are added during coagulation, causing fine particles to clump together; these are then allowed to settle out during sedimentation.",
+          "Following this, the water is filtered through layers of sand and gravel, which removes any remaining suspended particles. It is then disinfected, typically through the addition of chlorine, to eliminate harmful bacteria and other microorganisms. Finally, the treated water is stored in a holding tank before being distributed to homes through a network of underground pipes.",
+          "In summary, the water undergoes a sequence of physical and chemical treatments, moving from a natural source to a safe, drinkable supply delivered directly to consumers."
+        ],
+        "whyScoresWell": {
+          "en": "Consistent passive voice (\"is drawn\", \"are added\"), clear sequence words (begins, next, following this, finally), an overview before the detail, no opinion.",
+          "ar": "استخدام ثابت للمبني للمجهول (\"يُسحب\"، \"تُضاف\")، كلمات تسلسل واضحة (يبدأ، بعد ذلك، بعد هذا، أخيرًا)، نظرة عامة قبل التفاصيل، دون أي رأي شخصي."
+        }
+      }
+    ]
+  },
+  "task2": {
+    "label": "Task 2",
+    "models": [
+      {
+        "id": "a",
+        "title": "Model A: agree or disagree",
+        "note": "matches the book's practice task topic",
+        "prompt": "Many young people today choose to leave their home country to study or work abroad rather than build a career at home. To what extent do you agree or disagree with this trend?",
+        "modelAnswer": [
+          "I largely agree that leaving one's home country for study or work abroad is a reasonable, often necessary choice for young people today, even though it comes at a personal cost.",
+          "The strongest argument is economic. In many developing countries, including my own, qualified graduates often face limited job openings, salaries that don't match their qualifications, or bureaucratic barriers to starting a business. Moving abroad often lets a young professional be paid and promoted on actual skill rather than connections, which explains why so many choose this path despite leaving family behind.",
+          "This choice is not without drawbacks: emigration can accelerate a \"brain drain,\" and families are separated for years at a time. On balance, I believe the individual's right to pursue better opportunities outweighs the collective cost, provided governments also work to make staying a genuinely competitive option."
+        ],
+        "whyScoresWell": {
+          "en": "Clear position stated immediately and held throughout (Task Response), one main idea per paragraph with a logical for/against structure (Coherence), precise vocabulary (\"brain drain\", \"bureaucratic barriers\") without sounding memorised (Lexical Resource), a mix of simple and complex sentences (Grammar).",
+          "ar": "موقف واضح يُذكر فورًا ويستمر طوال المقال (الاستجابة للمهمة)، فكرة رئيسية واحدة لكل فقرة ببنية منطقية مع/ضد (الترابط والتماسك)، مفردات دقيقة (\"هجرة الأدمغة\"، \"عوائق بيروقراطية\") دون أن تبدو محفوظة (الثروة اللغوية)، مزيج من الجمل البسيطة والمركبة (القواعد)."
+        }
+      },
+      {
+        "id": "b",
+        "title": "Model B: discuss both views",
+        "prompt": "Some people think governments should spend more money on improving public transport instead of building new roads for cars. Others believe building more roads is a better use of public money. Discuss both views and give your own opinion.",
+        "modelAnswer": [
+          "There is an ongoing debate about whether governments should prioritise public transport over road building, or the reverse. Both positions have merit, though I believe the balance of argument favours public transport investment.",
+          "Those who favour building more roads argue that car ownership continues to rise, particularly as incomes grow, and that congested, poorly maintained roads waste fuel, increase journey times, and damage vehicles. In cities without reliable alternatives, they argue, failing to expand road capacity simply shifts the problem elsewhere rather than solving it.",
+          "On the other hand, supporters of public transport investment point out that building more roads tends to encourage even more car use over time, a pattern often called induced demand, meaning congestion eventually returns to previous levels regardless of how many lanes are added. They also highlight the environmental and public health costs of a car dependent city, from air pollution to reduced space for pedestrians and cyclists. A well funded bus or rail network, by contrast, can move far more people through the same amount of space, while also offering mobility to those who cannot afford a car.",
+          "In my view, public transport deserves the greater share of public investment. While some road maintenance and targeted expansion will always be necessary, directing the bulk of funding toward buses, trams, or rail is likely to reduce congestion more sustainably in the long run, while also benefiting lower income residents who depend on affordable transport options. Algiers and other growing Algerian cities, in particular, are likely to face worsening congestion if road building remains the default response to rising demand.",
+          "Governments should therefore treat public transport not as a secondary concern but as the central pillar of urban transport policy."
+        ],
+        "whyScoresWell": {
+          "en": "Covers both views fairly before giving an opinion (exactly what \"discuss both views and give your own opinion\" requires), uses a topic-specific term correctly (\"induced demand\"), ties the conclusion back to the Algerian context without losing the general argument, four clear paragraphs (both views, opinion, conclusion).",
+          "ar": "يغطي كلا الرأيين بإنصاف قبل إبداء الرأي (وهو بالضبط ما تتطلبه عبارة \"ناقش الرأيين وأبدِ رأيك\")، يستخدم مصطلحًا متخصصًا بشكل صحيح (\"الطلب المستحث\")، يربط الخاتمة بالسياق الجزائري دون فقدان الحجة العامة، أربع فقرات واضحة (الرأيان، الرأي الشخصي، الخاتمة)."
+        }
+      }
+    ]
+  }
+}

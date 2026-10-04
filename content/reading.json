@@ -1,0 +1,81 @@
+{
+  "title": "The Return of the Oasis",
+  "instructions": "You should spend about 20 minutes on Questions 1–13, which are based on the passage below.",
+  "passage": [
+    "For over a thousand years, communities across the Algerian Sahara depended on an ingenious system of underground tunnels known as foggaras to bring water to their oasis towns. A foggara begins at a point upstream, often many kilometres from the settlement it serves, where it taps into an underground aquifer. From there, a gently sloping tunnel carries the water entirely by gravity, with no pumps or machinery of any kind, down to the gardens and homes at the oasis itself. Along the length of each tunnel, engineers dug a series of vertical shafts at regular intervals, both to remove excavated soil during construction and to allow workers to climb down for inspection and repair in the centuries since.",
+    "Because water was scarce and the labour of maintaining a foggara was shared among many families, oasis communities developed detailed systems for allocating it fairly. Remarkably, these schedules were not timed using clocks or sundials but by the position of particular stars as they crossed the night sky, a method precise enough that disputes over a few minutes of water access were rare. When conflicts did arise, they were settled by local councils whose authority rested on a blend of religious and customary law, a system that endured largely unchanged until the mid-twentieth century.",
+    "The introduction of diesel-powered pumps in the decades that followed transformed irrigation across the region. Pumps could draw water far faster than any foggara, and wells could be sunk wherever they were needed, freeing farmers from dependence on a single ageing tunnel. For years this seemed an unambiguous improvement. It took far longer for a serious drawback to become apparent: unlike a foggara, which could only ever deliver water as fast as it naturally flowed, a pump could draw groundwater out of an aquifer more quickly than rainfall and seepage could replenish it. In oasis after oasis, water tables began to fall, and by the time the scale of the problem was widely recognised, several ancient foggaras had already run dry.",
+    "In response, a number of restoration projects have attempted to bring abandoned foggaras back into use. This work is, by any account, unglamorous: it involves months of hard physical labour clearing collapsed sections by hand, combined with a painstaking effort to reconstruct the original tunnel routes from the memories of elderly residents who recalled walking their shafts as children, since few detailed maps or records had ever been kept. Where that oral knowledge has survived, some tunnels have been successfully reopened using little more than this inherited, word of mouth understanding of where they once ran.",
+    "Not everyone is convinced that foggaras have a long term future, however. The most persistent objection from sceptics is not that the system is too costly to restore, but that it was simply never designed to serve populations as large as those living in oasis towns today, and cannot do so on its own, however well it is maintained. For this reason, most current restoration projects are not attempting to replace modern pumps outright, but to combine the two: using foggaras to meet baseline needs while reserving pumped water, carefully monitored, for periods of peak demand. Engineers increasingly describe this combined model simply as hybrid water management, and modern tools now support it closely, with satellite monitoring helping track aquifer levels in real time. Whether this hybrid approach endures will depend chiefly on one thing above all: whether restoration projects can secure sustained funding and ongoing maintenance over time, rather than the one-off bursts of investment and attention that have characterised many previous efforts."
+  ],
+  "questions": {
+    "tf": {
+      "instructions": "Questions 1–5. Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+      "items": [
+        { "id": 1, "statement": "Foggaras rely on pumps to carry water to the gardens and homes of the oasis.", "answer": "FALSE" },
+        { "id": 2, "statement": "The vertical shafts along a foggara served more than one purpose over its lifetime.", "answer": "TRUE" },
+        { "id": 3, "statement": "Foggara scheduling by the position of stars was more accurate than any method used elsewhere in the world.", "answer": "NOT GIVEN" },
+        { "id": 4, "statement": "It took some time before the full extent of the damage caused by diesel pumps became clear.", "answer": "TRUE" },
+        { "id": 5, "statement": "The government introduced diesel pumps in order to increase agricultural exports.", "answer": "NOT GIVEN" }
+      ]
+    },
+    "gap": {
+      "instructions": "Questions 6–9. Complete the sentences below. Write ONE WORD ONLY from the passage for each answer.",
+      "items": [
+        { "id": 6, "prompt": "Foggara tunnels carry water using ______ alone, without any pumps or machinery.", "answer": "gravity" },
+        { "id": 7, "prompt": "Workers dug vertical ______ at intervals to remove soil and allow access for repairs.", "answer": "shafts" },
+        { "id": 8, "prompt": "Water disputes were settled by councils whose authority rested on religious and ______ law.", "answer": "customary", "alt": ["religious/customary law", "religious", "customary law"] },
+        { "id": 9, "prompt": "Modern restoration projects increasingly favour a ______ model that combines foggaras with pumps.", "answer": "hybrid" }
+      ]
+    },
+    "mc": {
+      "instructions": "Questions 10–13. Choose the correct letter, A, B, C or D.",
+      "items": [
+        {
+          "id": 10,
+          "prompt": "According to the passage, what is most current restoration projects' approach to pumps?",
+          "options": [
+            { "letter": "A", "label": "to replace them entirely with foggaras" },
+            { "letter": "B", "label": "to ban them from oasis use altogether" },
+            { "letter": "C", "label": "to combine foggaras with pumps rather than replace them" },
+            { "letter": "D", "label": "to use pumps only during droughts" }
+          ],
+          "answer": "C"
+        },
+        {
+          "id": 11,
+          "prompt": "What do sceptics mainly object to about foggara restoration?",
+          "options": [
+            { "letter": "A", "label": "the financial cost of restoration work" },
+            { "letter": "B", "label": "the system's inability to serve today's larger populations on its own" },
+            { "letter": "C", "label": "the physical difficulty of the restoration work" },
+            { "letter": "D", "label": "the loss of traditional star-based scheduling" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 12,
+          "prompt": "How were abandoned foggara tunnel routes often rediscovered?",
+          "options": [
+            { "letter": "A", "label": "using old, detailed maps" },
+            { "letter": "B", "label": "through the memories of elderly residents" },
+            { "letter": "C", "label": "using satellite imaging" },
+            { "letter": "D", "label": "by consulting local councils' historical records" }
+          ],
+          "answer": "B"
+        },
+        {
+          "id": 13,
+          "prompt": "What, according to the passage, will mainly determine whether the hybrid approach endures?",
+          "options": [
+            { "letter": "A", "label": "whether modern tools like satellite monitoring are widely adopted" },
+            { "letter": "B", "label": "whether restoration projects secure sustained funding and maintenance" },
+            { "letter": "C", "label": "whether sceptics change their opinions" },
+            { "letter": "D", "label": "whether diesel pump use is banned" }
+          ],
+          "answer": "B"
+        }
+      ]
+    }
+  }
+}
