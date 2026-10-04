@@ -12,20 +12,20 @@
     "tf": {
       "instructions": "Questions 1–5. Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
       "items": [
-        { "id": 1, "statement": "Foggaras rely on pumps to carry water to the gardens and homes of the oasis.", "answer": "FALSE" },
-        { "id": 2, "statement": "The vertical shafts along a foggara served more than one purpose over its lifetime.", "answer": "TRUE" },
-        { "id": 3, "statement": "Foggara scheduling by the position of stars was more accurate than any method used elsewhere in the world.", "answer": "NOT GIVEN" },
-        { "id": 4, "statement": "It took some time before the full extent of the damage caused by diesel pumps became clear.", "answer": "TRUE" },
-        { "id": 5, "statement": "The government introduced diesel pumps in order to increase agricultural exports.", "answer": "NOT GIVEN" }
+        { "id": 1, "statement": "A foggara extracts water from directly beneath the point where it is used.", "answer": "FALSE" },
+        { "id": 2, "statement": "Water allocation schedules in oasis communities relied on astronomical timing rather than mechanical clocks.", "answer": "TRUE" },
+        { "id": 3, "statement": "Diesel pumps were introduced primarily by government programmes.", "answer": "NOT GIVEN" },
+        { "id": 4, "statement": "Some foggara tunnels have been rebuilt using information passed down by word of mouth.", "answer": "TRUE" },
+        { "id": 5, "statement": "Most current residents of oasis towns support a complete return to foggara-only irrigation.", "answer": "NOT GIVEN" }
       ]
     },
     "gap": {
-      "instructions": "Questions 6–9. Complete the sentences below. Write ONE WORD ONLY from the passage for each answer.",
+      "instructions": "Questions 6–9. Answer with NO MORE THAN THREE WORDS from the passage.",
       "items": [
-        { "id": 6, "prompt": "Foggara tunnels carry water using ______ alone, without any pumps or machinery.", "answer": "gravity" },
-        { "id": 7, "prompt": "Workers dug vertical ______ at intervals to remove soil and allow access for repairs.", "answer": "shafts" },
-        { "id": 8, "prompt": "Water disputes were settled by councils whose authority rested on religious and ______ law.", "answer": "customary", "alt": ["religious/customary law", "religious", "customary law"] },
-        { "id": 9, "prompt": "Modern restoration projects increasingly favour a ______ model that combines foggaras with pumps.", "answer": "hybrid" }
+        { "id": 6, "prompt": "What natural force moves water through a foggara tunnel, without machinery?", "answer": "gravity" },
+        { "id": 7, "prompt": "What were dug at intervals along a foggara to allow excavation and upkeep?", "answer": "shafts" },
+        { "id": 8, "prompt": "What kind of law, alongside custom, underpinned the councils that settled water disputes?", "answer": "religious/customary law", "alt": ["religious", "customary law", "religious law", "religious and customary law"] },
+        { "id": 9, "prompt": "What word describes the kind of water-management future proponents say combines old and new methods?", "answer": "hybrid" }
       ]
     },
     "mc": {
@@ -33,45 +33,45 @@
       "items": [
         {
           "id": 10,
-          "prompt": "According to the passage, what is most current restoration projects' approach to pumps?",
+          "prompt": "According to the passage, the main disadvantage of diesel pumps that went unnoticed for years was that they",
           "options": [
-            { "letter": "A", "label": "to replace them entirely with foggaras" },
-            { "letter": "B", "label": "to ban them from oasis use altogether" },
-            { "letter": "C", "label": "to combine foggaras with pumps rather than replace them" },
-            { "letter": "D", "label": "to use pumps only during droughts" }
+            { "letter": "A", "label": "were far more expensive to run than expected" },
+            { "letter": "B", "label": "required imported spare parts" },
+            { "letter": "C", "label": "drew down groundwater faster than it could replenish" },
+            { "letter": "D", "label": "produced lower crop yields than foggaras" }
           ],
           "answer": "C"
         },
         {
           "id": 11,
-          "prompt": "What do sceptics mainly object to about foggara restoration?",
+          "prompt": "The writer describes foggara restoration work as \"unglamorous\" mainly to emphasise that it",
           "options": [
-            { "letter": "A", "label": "the financial cost of restoration work" },
-            { "letter": "B", "label": "the system's inability to serve today's larger populations on its own" },
-            { "letter": "C", "label": "the physical difficulty of the restoration work" },
-            { "letter": "D", "label": "the loss of traditional star-based scheduling" }
+            { "letter": "A", "label": "receives little international funding" },
+            { "letter": "B", "label": "involves hard physical labour and reconstruction from memory" },
+            { "letter": "C", "label": "is opposed by most communities" },
+            { "letter": "D", "label": "has so far produced no measurable results" }
           ],
           "answer": "B"
         },
         {
           "id": 12,
-          "prompt": "How were abandoned foggara tunnel routes often rediscovered?",
+          "prompt": "Sceptics' main objection to reviving foggaras is that the system",
           "options": [
-            { "letter": "A", "label": "using old, detailed maps" },
-            { "letter": "B", "label": "through the memories of elderly residents" },
-            { "letter": "C", "label": "using satellite imaging" },
-            { "letter": "D", "label": "by consulting local councils' historical records" }
+            { "letter": "A", "label": "is too expensive to restore" },
+            { "letter": "B", "label": "cannot serve today's much larger populations alone" },
+            { "letter": "C", "label": "is less reliable than satellite monitoring" },
+            { "letter": "D", "label": "was never properly documented" }
           ],
           "answer": "B"
         },
         {
           "id": 13,
-          "prompt": "What, according to the passage, will mainly determine whether the hybrid approach endures?",
+          "prompt": "The passage suggests the long-term success of the hybrid approach depends chiefly on",
           "options": [
-            { "letter": "A", "label": "whether modern tools like satellite monitoring are widely adopted" },
-            { "letter": "B", "label": "whether restoration projects secure sustained funding and maintenance" },
-            { "letter": "C", "label": "whether sceptics change their opinions" },
-            { "letter": "D", "label": "whether diesel pump use is banned" }
+            { "letter": "A", "label": "training more engineers in traditional methods" },
+            { "letter": "B", "label": "sustained funding and maintenance over time" },
+            { "letter": "C", "label": "resolving disputes between oasis councils" },
+            { "letter": "D", "label": "replacing satellite data with local knowledge" }
           ],
           "answer": "B"
         }

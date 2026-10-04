@@ -27,7 +27,7 @@ const cards = [
     href: "/vocabulary",
     icon: "🗂️",
     title: "Vocabulary",
-    desc: "160 words from the book as flashcards, grouped by theme, with a self-test mode.",
+    desc: "144 words from the book as flashcards, grouped by theme, with a self-test mode.",
   },
 ];
 

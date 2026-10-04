@@ -4,24 +4,28 @@
     "models": [
       {
         "id": "a",
-        "title": "Model A: bar chart",
-        "note": "matches the book's practice task topic",
-        "prompt": "The chart below shows the percentage of people using the internet daily, by age group, in Algeria in 2015 and 2023. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
-        "chart": {
-          "type": "bar",
-          "categories": ["18–24", "25–34", "35–44", "45–54", "55+"],
-          "series": [
-            { "name": "2015", "data": [45, 38, 24, 14, 6] },
-            { "name": "2023", "data": [91, 84, 68, 45, 22] }
+        "title": "Model A: data table",
+        "note": "matches the book's practice task exactly",
+        "prompt": "The table below shows the percentage of households in Algeria with access to selected utilities and technologies in 2005 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+        "table": {
+          "type": "table",
+          "headers": ["Utility / technology", "2005", "2025"],
+          "rows": [
+            ["Piped drinking water", "78%", "96%"],
+            ["Electricity", "97%", "99%"],
+            ["Home internet", "4%", "71%"],
+            ["Mobile phone (at least one per household)", "41%", "98%"],
+            ["Private car", "22%", "39%"]
           ]
         },
         "modelAnswer": [
-          "The bar chart compares the share of each age group who used the internet daily in Algeria in 2015 and in 2023. Overall, daily internet use rose sharply across every age group, though the increase was far more dramatic among younger people.",
-          "Among 18–24 year-olds, daily use climbed from 45% in 2015 to 91% in 2023, nearly doubling. The 25–34 age group followed a similar pattern, rising from 38% to 84%. By contrast, the 55+ category rose only from 6% to 22%, remaining by far the least connected group throughout. In every age group, 2023 figures were higher than 2015, but the gap between the youngest and oldest users widened rather than narrowed."
+          "The table shows the proportion of Algerian households with access to five utilities and technologies in 2005 compared with 2025. Overall, access to every item increased over the twenty-year period, although the scale of the increase varied enormously, from a marginal rise in electricity access to a complete transformation in home internet use.",
+          "Electricity and piped drinking water were already widespread in 2005, at 97% and 78% of households respectively, and both edged higher by 2025, reaching 99% and 96%. Mobile phone ownership, meanwhile, rose dramatically from 41% to 98% of households, meaning it went from a minority to a near-universal technology over the period.",
+          "The most striking change was in home internet access, which climbed from just 4% of households in 2005 to 71% in 2025, by far the largest percentage-point increase of any category. Private car ownership also grew, albeit more modestly, from 22% to 39%, remaining the least widespread item on the list in both years."
         ],
         "whyScoresWell": {
-          "en": "Paraphrases the title (doesn't copy it), gives one overview sentence before any numbers, picks 2–3 comparisons rather than listing every figure, uses real numbers as evidence, stays purely descriptive with zero opinion.",
-          "ar": "يعيد صياغة العنوان (لا ينسخه)، يقدّم جملة عامة واحدة قبل ذكر أي أرقام، يختار 2-3 مقارنات بدلاً من سرد كل رقم، يستخدم أرقامًا حقيقية كدليل، ويبقى وصفيًا بحتًا دون أي رأي شخصي."
+          "en": "Paraphrases the title (doesn't copy it), gives one overview sentence before any numbers, groups the five rows into sensible comparisons rather than listing every figure in order, uses real numbers as evidence, stays purely descriptive with zero opinion.",
+          "ar": "يعيد صياغة العنوان (لا ينسخه)، يقدّم جملة عامة واحدة قبل ذكر أي أرقام، يجمّع الصفوف الخمسة في مقارنات منطقية بدلاً من سرد كل رقم بالترتيب، يستخدم أرقامًا حقيقية كدليل، ويبقى وصفيًا بحتًا دون أي رأي شخصي."
         }
       },
       {
@@ -74,17 +78,18 @@
       {
         "id": "b",
         "title": "Model B: discuss both views",
-        "prompt": "Some people think governments should spend more money on improving public transport instead of building new roads for cars. Others believe building more roads is a better use of public money. Discuss both views and give your own opinion.",
+        "note": "matches the book's practice task exactly",
+        "prompt": "Some people believe that university education should be free for all students, regardless of their family's income. Others believe that students who can afford to pay should do so, so that the money saved can be used to support only the poorest students. Discuss both these views and give your own opinion.",
         "modelAnswer": [
-          "There is an ongoing debate about whether governments should prioritise public transport over road building, or the reverse. Both positions have merit, though I believe the balance of argument favours public transport investment.",
-          "Those who favour building more roads argue that car ownership continues to rise, particularly as incomes grow, and that congested, poorly maintained roads waste fuel, increase journey times, and damage vehicles. In cities without reliable alternatives, they argue, failing to expand road capacity simply shifts the problem elsewhere rather than solving it.",
-          "On the other hand, supporters of public transport investment point out that building more roads tends to encourage even more car use over time, a pattern often called induced demand, meaning congestion eventually returns to previous levels regardless of how many lanes are added. They also highlight the environmental and public health costs of a car dependent city, from air pollution to reduced space for pedestrians and cyclists. A well funded bus or rail network, by contrast, can move far more people through the same amount of space, while also offering mobility to those who cannot afford a car.",
-          "In my view, public transport deserves the greater share of public investment. While some road maintenance and targeted expansion will always be necessary, directing the bulk of funding toward buses, trams, or rail is likely to reduce congestion more sustainably in the long run, while also benefiting lower income residents who depend on affordable transport options. Algiers and other growing Algerian cities, in particular, are likely to face worsening congestion if road building remains the default response to rising demand.",
-          "Governments should therefore treat public transport not as a secondary concern but as the central pillar of urban transport policy."
+          "There is ongoing debate about how university education should be funded: whether it should be free for every student, or whether only the poorest students should receive support while those who can pay do so. Both positions have genuine merit, though I believe a targeted system of support is the more realistic and fair approach.",
+          "Supporters of universal free tuition argue that education is a public good rather than a private privilege, and that charging fees deters capable students from low-income families from applying at all, regardless of how generous the support system looks on paper. They also point out that a country benefits as a whole from a more highly educated population, through higher tax revenue and a more skilled workforce later on, so the investment pays for itself over time.",
+          "On the other hand, those who favour means-tested support argue that making every student's education free, including those whose families could easily afford to pay, wastes public money that could instead be concentrated on students who genuinely cannot afford to attend. In a country like Algeria, where public budgets are already stretched across healthcare, infrastructure, and other priorities, directing limited funds toward the students who need them most arguably produces a fairer and more sustainable outcome than spreading the same budget thinly across everyone.",
+          "In my view, the second approach is more practical, provided that the system for determining who can and cannot afford to pay is transparent and genuinely accessible, rather than discouraging eligible students through complicated paperwork. Free education for all sounds appealing in principle, but in a context of limited public funds, means-tested support is more likely to reach the students whose access to university genuinely depends on it.",
+          "Governments should therefore prioritise targeted financial support over universal free tuition, while working to keep the application process for that support as simple as possible."
         ],
         "whyScoresWell": {
-          "en": "Covers both views fairly before giving an opinion (exactly what \"discuss both views and give your own opinion\" requires), uses a topic-specific term correctly (\"induced demand\"), ties the conclusion back to the Algerian context without losing the general argument, four clear paragraphs (both views, opinion, conclusion).",
-          "ar": "يغطي كلا الرأيين بإنصاف قبل إبداء الرأي (وهو بالضبط ما تتطلبه عبارة \"ناقش الرأيين وأبدِ رأيك\")، يستخدم مصطلحًا متخصصًا بشكل صحيح (\"الطلب المستحث\")، يربط الخاتمة بالسياق الجزائري دون فقدان الحجة العامة، أربع فقرات واضحة (الرأيان، الرأي الشخصي، الخاتمة)."
+          "en": "Addresses exactly what \"discuss both views and give your own opinion\" requires: covers each side in its own paragraph before stating a position, uses precise vocabulary (\"means-tested\", \"public good\"), ties the conclusion to the Algerian context without losing the general argument, and never drifts off-topic into unrelated issues.",
+          "ar": "يستجيب بدقة لما تتطلبه عبارة \"ناقش الرأيين وأبدِ رأيك\": يغطي كل رأي في فقرة منفصلة قبل تحديد الموقف، يستخدم مفردات دقيقة (\"دعم موجّه حسب الدخل\"، \"منفعة عامة\")، يربط الخاتمة بالسياق الجزائري دون فقدان الحجة العامة، ولا يحيد عن الموضوع أبدًا."
         }
       }
     ]

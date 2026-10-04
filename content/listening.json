@@ -47,15 +47,15 @@
       ],
       "questions": [
         { "id": 1, "type": "gap", "prompt": "Course name: Introduction to ______ Photography", "answer": "digital" },
-        { "id": 2, "type": "gap", "prompt": "Classes run every", "answer": "tuesday" },
-        { "id": 3, "type": "gap", "prompt": "Start time", "answer": "6.15", "alt": ["6:15", "6.15pm", "six fifteen"] },
-        { "id": 4, "type": "gap", "prompt": "Total number of sessions", "answer": "eight", "alt": ["8"] },
-        { "id": 5, "type": "gap", "prompt": "Course fee (DA)", "answer": "4500", "alt": ["4,500"] },
-        { "id": 6, "type": "gap", "prompt": "Equipment included (besides a notebook): a", "answer": "camera" },
-        { "id": 7, "type": "gap", "prompt": "Room number: Studio", "answer": "3", "alt": ["three"] },
-        { "id": 8, "type": "gap", "prompt": "Floor", "answer": "first", "alt": ["1st"] },
-        { "id": 9, "type": "gap", "prompt": "Bring to the first session: a", "answer": "notebook" },
-        { "id": 10, "type": "gap", "prompt": "Booking reference starts with the letters", "answer": "rac" }
+        { "id": 2, "type": "gap", "prompt": "Day of classes: ______", "answer": "tuesday" },
+        { "id": 3, "type": "gap", "prompt": "Start time: ______", "answer": "6.15", "alt": ["6:15", "6.15pm", "six fifteen"] },
+        { "id": 4, "type": "gap", "prompt": "Length of course: ______ weeks", "answer": "eight", "alt": ["8"] },
+        { "id": 5, "type": "gap", "prompt": "Course fee: ______ dinars", "answer": "4500", "alt": ["4,500"] },
+        { "id": 6, "type": "gap", "prompt": "Included in fee: use of a ______ (deposit required)", "answer": "camera" },
+        { "id": 7, "type": "gap", "prompt": "Room: Studio ______", "answer": "3", "alt": ["three"] },
+        { "id": 8, "type": "gap", "prompt": "Location: ______ floor", "answer": "first", "alt": ["1st"] },
+        { "id": 9, "type": "gap", "prompt": "Bring to first session: a ______", "answer": "notebook" },
+        { "id": 10, "type": "gap", "prompt": "Booking reference begins with the letters ______", "answer": "rac" }
       ]
     },
     {
@@ -75,63 +75,64 @@
       "questions": [
         {
           "id": 11, "type": "mc",
-          "prompt": "What matters most to the organisation when recruiting volunteers?",
+          "prompt": "Why does the speaker apologise at the start?",
           "options": [
-            { "letter": "A", "label": "previous experience" },
-            { "letter": "B", "label": "reliability" },
-            { "letter": "C", "label": "being young and energetic" }
+            { "letter": "A", "label": "The room is too small" },
+            { "letter": "B", "label": "Some chairs are placed very close together" },
+            { "letter": "C", "label": "There are not enough chairs" }
           ],
           "answer": "B"
         },
         {
           "id": 12, "type": "mc",
-          "prompt": "What does the speaker say about training?",
+          "prompt": "What does the speaker say about the age of volunteers?",
           "options": [
-            { "letter": "A", "label": "it consists of a single session only" },
-            { "letter": "B", "label": "it is optional for experienced volunteers" },
-            { "letter": "C", "label": "it continues with refresher sessions after the first one" }
+            { "letter": "A", "label": "Younger volunteers tend to be more reliable" },
+            { "letter": "B", "label": "Most volunteers are in their seventies" },
+            { "letter": "C", "label": "Age matters less than reliability" }
           ],
           "answer": "C"
         },
         {
           "id": 13, "type": "mc",
-          "prompt": "What is the minimum commitment period expected of volunteers?",
+          "prompt": "What does the speaker say about training?",
           "options": [
-            { "letter": "A", "label": "one year" },
-            { "letter": "B", "label": "six months" },
-            { "letter": "C", "label": "one day a week" }
+            { "letter": "A", "label": "It happens only once" },
+            { "letter": "B", "label": "It continues after the first session" },
+            { "letter": "C", "label": "It is done entirely online" }
           ],
           "answer": "B"
         },
         {
           "id": "14-15", "type": "multi",
-          "prompt": "Which TWO things does the speaker ask applicants to think about before applying?",
+          "prompt": "Which TWO things does the speaker ask volunteers to think about before applying?",
           "options": [
             { "letter": "A", "label": "their level of commitment" },
-            { "letter": "B", "label": "their age" },
-            { "letter": "C", "label": "their qualifications" },
+            { "letter": "B", "label": "their financial situation" },
+            { "letter": "C", "label": "their work experience" },
             { "letter": "D", "label": "their availability" },
-            { "letter": "E", "label": "whether they can provide references" }
+            { "letter": "E", "label": "their ambition" }
           ],
           "answer": ["A", "D"]
         },
         {
           "id": "16-20", "type": "matching",
-          "prompt": "Match each requirement (16–20) with the volunteer role it belongs to (A–F). Use each letter once; one letter is not needed.",
+          "prompt": "Which skill (A–G) most helps with each volunteer role (16–20)? Use each letter once; two letters are not needed.",
           "options": [
-            { "letter": "A", "label": "Event marshal" },
-            { "letter": "B", "label": "Dog walking" },
-            { "letter": "C", "label": "Fundraising events" },
-            { "letter": "D", "label": "Cat socialising" },
-            { "letter": "E", "label": "Adoption listings" },
-            { "letter": "F", "label": "Reception desk" }
+            { "letter": "A", "label": "experience with children" },
+            { "letter": "B", "label": "physical fitness" },
+            { "letter": "C", "label": "patience and a calm manner" },
+            { "letter": "D", "label": "comfort speaking to the public" },
+            { "letter": "E", "label": "basic computer skills" },
+            { "letter": "F", "label": "a good camera or phone" },
+            { "letter": "G", "label": "weekend availability" }
           ],
           "items": [
-            { "id": 16, "label": "requires a good level of physical fitness", "answer": "B" },
-            { "id": 17, "label": "requires a good camera or phone", "answer": "E" },
-            { "id": 18, "label": "requires patience and a calm manner", "answer": "D" },
-            { "id": 19, "label": "requires comfort speaking to the public", "answer": "C" },
-            { "id": 20, "label": "requires basic computer skills", "answer": "F" }
+            { "id": 16, "label": "Dog walking", "answer": "B" },
+            { "id": 17, "label": "Reception desk", "answer": "E" },
+            { "id": 18, "label": "Fundraising events", "answer": "D" },
+            { "id": 19, "label": "Cat socialising", "answer": "C" },
+            { "id": 20, "label": "Photography for adoption listings", "answer": "F" }
           ]
         }
       ]
@@ -166,85 +167,85 @@
       "questions": [
         {
           "id": 21, "type": "mc",
-          "prompt": "What surprised Tom most about the lecturer's feedback?",
+          "prompt": "What problem did Tom have at the start of the meeting?",
           "options": [
-            { "letter": "A", "label": "that most waste comes from unsold food rather than students' plates" },
-            { "letter": "B", "label": "that students wasted more than he expected" },
-            { "letter": "C", "label": "that the survey data was inaccurate" }
+            { "letter": "A", "label": "He couldn't find anywhere to park" },
+            { "letter": "B", "label": "He forgot to bring his notes" },
+            { "letter": "C", "label": "He arrived at the wrong building" }
           ],
           "answer": "A"
         },
         {
           "id": 22, "type": "mc",
-          "prompt": "How did Tom feel about the feedback overall?",
+          "prompt": "What were Tom and Sara surprised to learn about the cafeteria's food waste?",
           "options": [
-            { "letter": "A", "label": "He thought it was too harsh" },
-            { "letter": "B", "label": "He found it accurate, although unwelcome" },
-            { "letter": "C", "label": "He disagreed with most of it" }
+            { "letter": "A", "label": "It has increased sharply this year" },
+            { "letter": "B", "label": "Most of it comes from unsold food, not plate scraps" },
+            { "letter": "C", "label": "It costs the university more than expected" }
           ],
           "answer": "B"
         },
         {
           "id": 23, "type": "mc",
-          "prompt": "What did Tom and Sara disagree about regarding the careers advice session?",
+          "prompt": "Tom and Sara agree that the lecturer's feedback on their report was",
           "options": [
-            { "letter": "A", "label": "whether it was useful at all" },
-            { "letter": "B", "label": "whether it should be compulsory" },
-            { "letter": "C", "label": "exactly what was wrong with it" }
+            { "letter": "A", "label": "unfair in places" },
+            { "letter": "B", "label": "hard to understand" },
+            { "letter": "C", "label": "accurate, if unwelcome" }
           ],
           "answer": "C"
         },
         {
           "id": 24, "type": "mc",
-          "prompt": "Regarding his career path, Tom would prefer to",
+          "prompt": "What do Tom and Sara disagree about regarding their school's careers advice?",
           "options": [
-            { "letter": "A", "label": "decide now" },
-            { "letter": "B", "label": "keep his options open" },
-            { "letter": "C", "label": "follow Sara's advice" }
+            { "letter": "A", "label": "whether it was useful at all" },
+            { "letter": "B", "label": "exactly what was wrong with it" },
+            { "letter": "C", "label": "who was responsible for giving it" }
           ],
           "answer": "B"
         },
         {
           "id": 25, "type": "mc",
-          "prompt": "How does Tom now feel about unpaid work experience in his industry?",
+          "prompt": "When discussing their future careers, Tom and Sara disagree on",
           "options": [
-            { "letter": "A", "label": "still frustrated by it" },
-            { "letter": "B", "label": "has accepted it as normal" },
-            { "letter": "C", "label": "thinks it should be banned" }
+            { "letter": "A", "label": "which field is the better choice" },
+            { "letter": "B", "label": "when to commit to a particular path" },
+            { "letter": "C", "label": "why a career in sustainability appeals to them" }
           ],
           "answer": "B"
         },
         {
           "id": 26, "type": "mc",
-          "prompt": "What did Sara worry about too much during her own internship?",
+          "prompt": "How does Tom feel about unpaid work experience being common in the industry?",
           "options": [
-            { "letter": "A", "label": "how she came across to others" },
-            { "letter": "B", "label": "not being paid" },
-            { "letter": "C", "label": "making mistakes" }
+            { "letter": "A", "label": "He accepts it as simply how things are" },
+            { "letter": "B", "label": "He thinks it is dishonest" },
+            { "letter": "C", "label": "He believes most people want to change it" }
           ],
           "answer": "A"
         },
         {
           "id": "27-28", "type": "multi",
-          "prompt": "Which TWO questions do Tom and Sara agree to add to the follow-up survey?",
+          "prompt": "Which TWO mistakes does Sara admit she made during her internship?",
           "options": [
-            { "letter": "A", "label": "why customers choose the cafeteria" },
-            { "letter": "B", "label": "why customers leave food on their plates" },
-            { "letter": "C", "label": "what time of day unsold food is thrown away" },
-            { "letter": "D", "label": "how portions could be made cheaper" },
-            { "letter": "E", "label": "whether the cafeteria should open later" }
+            { "letter": "A", "label": "being dishonest with her supervisor" },
+            { "letter": "B", "label": "worrying too much about how she came across" },
+            { "letter": "C", "label": "expecting too much responsibility too soon" },
+            { "letter": "D", "label": "spending too much on travel" },
+            { "letter": "E", "label": "missing deadlines" }
           ],
           "answer": ["B", "C"]
         },
         {
           "id": "29-30", "type": "multi",
-          "prompt": "Which TWO things does Sara say about her own internship, looking back?",
+          "prompt": "Which TWO pieces of information do Tom and Sara agree would be useful to collect?",
           "options": [
-            { "letter": "A", "label": "she made some mistakes" },
-            { "letter": "B", "label": "she was paid well" },
-            { "letter": "C", "label": "she didn't take on responsibility quickly enough" },
-            { "letter": "D", "label": "she expected too much responsibility too soon" },
-            { "letter": "E", "label": "her internship lasted six months" }
+            { "letter": "A", "label": "why customers leave food on their plates" },
+            { "letter": "B", "label": "how much students are willing to pay for meals" },
+            { "letter": "C", "label": "which menu items are thrown away most often" },
+            { "letter": "D", "label": "what time of day most unsold food is discarded" },
+            { "letter": "E", "label": "how food waste compares to other universities" }
           ],
           "answer": ["A", "D"]
         }

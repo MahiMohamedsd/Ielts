@@ -12,46 +12,35 @@ type ChartModel = {
   prompt: string;
   modelAnswer: string[];
   whyScoresWell: { en: string; ar: string };
-  chart?: { type: "bar"; categories: string[]; series: { name: string; data: number[] }[] };
+  table?: { type: "table"; headers: string[]; rows: string[][] };
   process?: { type: "process"; stages: string[] };
 };
 
-function BarChart({ chart }: { chart: NonNullable<ChartModel["chart"]> }) {
-  const max = Math.max(...chart.series.flatMap((s) => s.data));
-  const colors = ["var(--primary)", "var(--accent)"];
+function DataTable({ table }: { table: NonNullable<ChartModel["table"]> }) {
   return (
-    <div className="rounded-lg border border-rule bg-white/70 p-4">
-      <div className="flex items-end gap-4 overflow-x-auto pb-2">
-        {chart.categories.map((cat, i) => (
-          <div key={cat} className="flex flex-col items-center gap-1">
-            <div className="flex h-40 items-end gap-1">
-              {chart.series.map((s, si) => (
-                <div
-                  key={s.name}
-                  className="w-5 rounded-t"
-                  style={{
-                    height: `${(s.data[i] / max) * 100}%`,
-                    background: colors[si % colors.length],
-                  }}
-                  title={`${s.name}: ${s.data[i]}%`}
-                />
+    <div className="overflow-x-auto rounded-lg border border-rule bg-white/70">
+      <table className="w-full text-left text-sm">
+        <thead>
+          <tr className="bg-primary text-paper">
+            {table.headers.map((h) => (
+              <th key={h} className="px-3 py-2 font-heading text-xs font-semibold">
+                {h}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {table.rows.map((row, i) => (
+            <tr key={i} className={i % 2 === 0 ? "bg-white/60" : "bg-example-bg"}>
+              {row.map((cell, j) => (
+                <td key={j} className="px-3 py-2 text-ink">
+                  {cell}
+                </td>
               ))}
-            </div>
-            <span className="text-[11px] text-muted">{cat}</span>
-          </div>
-        ))}
-      </div>
-      <div className="mt-3 flex gap-4 text-xs text-muted">
-        {chart.series.map((s, si) => (
-          <span key={s.name} className="flex items-center gap-1.5">
-            <span
-              className="inline-block h-2.5 w-2.5 rounded-sm"
-              style={{ background: colors[si % colors.length] }}
-            />
-            {s.name}
-          </span>
-        ))}
-      </div>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
@@ -87,7 +76,7 @@ function ModelCard({ model }: { model: ChartModel }) {
         {model.prompt}
       </p>
 
-      {model.chart && <BarChart chart={model.chart} />}
+      {model.table && <DataTable table={model.table} />}
       {model.process && <ProcessDiagram process={model.process} />}
 
       <Tip label="Try it yourself">{t("write_first")}</Tip>
