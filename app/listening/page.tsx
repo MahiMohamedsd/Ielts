@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Suspense, useMemo, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import listeningData from "@/content/listening.json";
 import type { ListeningData } from "@/lib/listeningTypes";
 import ListeningPartView from "@/components/ListeningPartView";
@@ -10,10 +11,27 @@ import { listeningBand } from "@/lib/scoring";
 
 const data = listeningData as ListeningData;
 
-export default function ListeningPage() {
+// Lets each part be deep-linked (e.g. /listening?part=2) so a QR code printed
+// next to that part in the book can jump straight to it.
+function initialPartFromParam(param: string | null): number {
+  const n = Number(param);
+  const idx = data.parts.findIndex((p) => p.id === n);
+  return idx >= 0 ? idx : 0;
+}
+
+function ListeningPageInner() {
   const { t } = useLang();
-  const [activePart, setActivePart] = useState(0);
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const [activePart, setActivePartState] = useState(() =>
+    initialPartFromParam(searchParams.get("part"))
+  );
   const [refreshTick, setRefreshTick] = useState(0);
+
+  function setActivePart(i: number) {
+    setActivePartState(i);
+    router.replace(`/listening?part=${data.parts[i].id}`, { scroll: false });
+  }
 
   const { totalRaw, partsChecked } = useMemo(() => {
     let sum = 0;
@@ -68,5 +86,13 @@ export default function ListeningPage() {
         onScoreChange={() => setRefreshTick((n) => n + 1)}
       />
     </div>
+  );
+}
+
+export default function ListeningPage() {
+  return (
+    <Suspense fallback={null}>
+      <ListeningPageInner />
+    </Suspense>
   );
 }
