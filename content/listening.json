@@ -136,7 +136,7 @@
       "subtitle": "1 speaker, talk to potential volunteers",
       "accent": "British",
       "audioFile": "/audio/listening-part2.mp3",
-      "instructions": "Questions 11–15. Choose the correct letter, A, B or C, or the correct letters for multi-select questions.",
+      "instructions": "Questions 11–20. Choose the correct letter, A, B or C, or the correct letters for multi-select and matching questions.",
       "script": [],
       "questions": [
         {
@@ -228,6 +228,68 @@
           "answer": [
             "B",
             "E"
+          ]
+        },
+        {
+          "id": "16-20",
+          "type": "matching",
+          "prompt": "What does the speaker suggest would be helpful for each of the following areas of voluntary work? Choose FIVE answers (A–G).",
+          "options": [
+            {
+              "letter": "A",
+              "label": "experience on stage"
+            },
+            {
+              "letter": "B",
+              "label": "original, new ideas"
+            },
+            {
+              "letter": "C",
+              "label": "parenting skills"
+            },
+            {
+              "letter": "D",
+              "label": "an understanding of food and diet"
+            },
+            {
+              "letter": "E",
+              "label": "retail experience"
+            },
+            {
+              "letter": "F",
+              "label": "a good memory"
+            },
+            {
+              "letter": "G",
+              "label": "a good level of fitness"
+            }
+          ],
+          "items": [
+            {
+              "id": 16,
+              "label": "Fundraising",
+              "answer": "B"
+            },
+            {
+              "id": 17,
+              "label": "Litter collection",
+              "answer": "G"
+            },
+            {
+              "id": 18,
+              "label": "'Playmates'",
+              "answer": "C"
+            },
+            {
+              "id": 19,
+              "label": "Story club",
+              "answer": "A"
+            },
+            {
+              "id": 20,
+              "label": "First aid",
+              "answer": "F"
+            }
           ]
         }
       ]
