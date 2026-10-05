@@ -18,8 +18,8 @@ export default function ListeningPartView({
   onScoreChange?: () => void;
 }) {
   const { t } = useLang();
-  const storageKey = `listening:part${part.id}:answers`;
-  const scoreKey = `listening:part${part.id}:score`;
+  const storageKey = `listening:v2:part${part.id}:answers`;
+  const scoreKey = `listening:v2:part${part.id}:score`;
 
   const [answers, setAnswers] = useState<Answers>(() => loadJSON(storageKey, {}));
   const initialScore = useState<{ raw: number } | null>(() => loadJSON(scoreKey, null))[0];

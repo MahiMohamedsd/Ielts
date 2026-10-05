@@ -37,7 +37,7 @@ function ListeningPageInner() {
     let sum = 0;
     let checkedCount = 0;
     for (const part of data.parts) {
-      const saved = loadJSON<{ raw: number } | null>(`listening:part${part.id}:score`, null);
+      const saved = loadJSON<{ raw: number } | null>(`listening:v2:part${part.id}:score`, null);
       if (saved) {
         sum += saved.raw;
         checkedCount += 1;

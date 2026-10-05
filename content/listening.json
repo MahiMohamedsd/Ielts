@@ -1,287 +1,437 @@
 {
   "bandConversion": [
-    { "min": 39, "band": 9 },
-    { "min": 37, "band": 8.5 },
-    { "min": 35, "band": 8 },
-    { "min": 32, "band": 7.5 },
-    { "min": 30, "band": 7 },
-    { "min": 26, "band": 6.5 },
-    { "min": 23, "band": 6 },
-    { "min": 18, "band": 5.5 },
-    { "min": 16, "band": 5 },
-    { "min": 13, "band": 4.5 },
-    { "min": 10, "band": 4 }
+    {
+      "min": 39,
+      "band": 9
+    },
+    {
+      "min": 37,
+      "band": 8.5
+    },
+    {
+      "min": 35,
+      "band": 8
+    },
+    {
+      "min": 32,
+      "band": 7.5
+    },
+    {
+      "min": 30,
+      "band": 7
+    },
+    {
+      "min": 26,
+      "band": 6.5
+    },
+    {
+      "min": 23,
+      "band": 6
+    },
+    {
+      "min": 18,
+      "band": 5.5
+    },
+    {
+      "min": 16,
+      "band": 5
+    },
+    {
+      "min": 13,
+      "band": 4.5
+    },
+    {
+      "min": 10,
+      "band": 4
+    }
   ],
   "parts": [
     {
       "id": 1,
-      "title": "Part 1 — Photography course enquiry",
-      "subtitle": "2 speakers, phone enquiry, easiest",
+      "title": "Part 1 — Transport survey",
+      "subtitle": "2 speakers, survey interview, easiest",
       "accent": "British",
       "audioFile": "/audio/listening-part1.mp3",
-      "instructions": "Questions 1–10. Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
-      "script": [
-        { "speaker": "WOMAN (staff)", "text": "Riverside Arts Centre, good afternoon, how can I help you?" },
-        { "speaker": "MAN (caller)", "text": "Hi, I saw a flyer about a photography course and wanted to find out more." },
-        { "speaker": "WOMAN", "text": "Of course. That'll be our Introduction to Digital Photography course, that's D-I-G-I-T-A-L, Digital Photography, for complete beginners." },
-        { "speaker": "MAN", "text": "Perfect, that's exactly what I'm after. When does it run?" },
-        { "speaker": "WOMAN", "text": "Classes are every Tuesday evening." },
-        { "speaker": "MAN", "text": "Tuesday, got it. And what time does it start?" },
-        { "speaker": "WOMAN", "text": "We begin at six... actually, sorry, let me check that again... yes, six fifteen, so 6.15pm." },
-        { "speaker": "MAN", "text": "6.15, thanks. And how long does the course run for altogether?" },
-        { "speaker": "WOMAN", "text": "It's an eight week course, so eight sessions in total." },
-        { "speaker": "MAN", "text": "Eight weeks, great. What's the fee?" },
-        { "speaker": "WOMAN", "text": "The full course is four thousand five hundred dinars, that's 4,500 DA." },
-        { "speaker": "MAN", "text": "4,500, okay. Does that include any equipment, or do I need my own camera?" },
-        { "speaker": "WOMAN", "text": "It actually includes the use of a camera for the duration of the course, there's just a small refundable deposit required." },
-        { "speaker": "MAN", "text": "Oh brilliant, that's useful, I don't own one yet. Which room will it be in?" },
-        { "speaker": "WOMAN", "text": "You'll be in Studio 3." },
-        { "speaker": "MAN", "text": "Studio 3. And whereabouts is that in the building?" },
-        { "speaker": "WOMAN", "text": "That's on the first floor, just past the reception area." },
-        { "speaker": "MAN", "text": "First floor, got it. Is there anything I should bring to the first session?" },
-        { "speaker": "WOMAN", "text": "Just a notebook for taking notes, everything else is provided." },
-        { "speaker": "MAN", "text": "A notebook, okay, easy enough. And if I book today, will I get a reference number?" },
-        { "speaker": "WOMAN", "text": "Yes, every booking reference begins with the letters R-A-C, followed by four digits." },
-        { "speaker": "MAN", "text": "RAC, understood. Thanks very much for your help." },
-        { "speaker": "WOMAN", "text": "You're welcome, enjoy the course!" }
-      ],
+      "instructions": "Questions 1–10. Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer. Name: Sadie Jones · Year of birth: 1991",
+      "script": [],
       "questions": [
-        { "id": 1, "type": "gap", "prompt": "Course name: Introduction to ______ Photography", "answer": "digital" },
-        { "id": 2, "type": "gap", "prompt": "Day of classes: ______", "answer": "tuesday" },
-        { "id": 3, "type": "gap", "prompt": "Start time: ______", "answer": "6.15", "alt": ["6:15", "6.15pm", "six fifteen"] },
-        { "id": 4, "type": "gap", "prompt": "Length of course: ______ weeks", "answer": "eight", "alt": ["8"] },
-        { "id": 5, "type": "gap", "prompt": "Course fee: ______ dinars", "answer": "4500", "alt": ["4,500"] },
-        { "id": 6, "type": "gap", "prompt": "Included in fee: use of a ______ (deposit required)", "answer": "camera" },
-        { "id": 7, "type": "gap", "prompt": "Room: Studio ______", "answer": "3", "alt": ["three"] },
-        { "id": 8, "type": "gap", "prompt": "Location: ______ floor", "answer": "first", "alt": ["1st"] },
-        { "id": 9, "type": "gap", "prompt": "Bring to first session: a ______", "answer": "notebook" },
-        { "id": 10, "type": "gap", "prompt": "Booking reference begins with the letters ______", "answer": "rac" }
+        {
+          "id": 1,
+          "type": "gap",
+          "prompt": "Postcode: ______",
+          "answer": "dw30 7yz",
+          "alt": [
+            "dw307yz"
+          ]
+        },
+        {
+          "id": 2,
+          "type": "gap",
+          "prompt": "Travelling by bus — Date of bus journey: ______",
+          "answer": "24 april",
+          "alt": [
+            "24th april",
+            "april 24",
+            "april 24th",
+            "24th of april",
+            "the 24th of april"
+          ]
+        },
+        {
+          "id": 3,
+          "type": "gap",
+          "prompt": "Reason for trip: shopping and visit to the ______",
+          "answer": "dentist"
+        },
+        {
+          "id": 4,
+          "type": "gap",
+          "prompt": "Travelled by bus because cost of ______ too high",
+          "answer": "parking"
+        },
+        {
+          "id": 5,
+          "type": "gap",
+          "prompt": "Got on bus at ______ Street",
+          "answer": "claxby"
+        },
+        {
+          "id": 6,
+          "type": "gap",
+          "prompt": "Complaints about bus service: bus today was ______",
+          "answer": "late"
+        },
+        {
+          "id": 7,
+          "type": "gap",
+          "prompt": "Complaints about bus service: frequency of buses in the ______",
+          "answer": "evening",
+          "alt": [
+            "evenings"
+          ]
+        },
+        {
+          "id": 8,
+          "type": "gap",
+          "prompt": "Travelling by car — Goes to the ______ by car",
+          "answer": "supermarket"
+        },
+        {
+          "id": 9,
+          "type": "gap",
+          "prompt": "Travelling by bicycle — Dislikes travelling by bike in the city centre because of the ______",
+          "answer": "pollution"
+        },
+        {
+          "id": 10,
+          "type": "gap",
+          "prompt": "Doesn't own a bike because of a lack of ______",
+          "answer": "storage"
+        }
       ]
     },
     {
       "id": 2,
-      "title": "Part 2 — Talk to new volunteers",
-      "subtitle": "1 speaker, monologue to new volunteers",
-      "accent": "Australian",
+      "title": "Part 2 — Becoming a volunteer for ACE",
+      "subtitle": "1 speaker, talk to potential volunteers",
+      "accent": "British",
       "audioFile": "/audio/listening-part2.mp3",
-      "instructions": "Questions 11–20. Choose the correct letter, A, B or C, or the correct letters for multi-select and matching questions.",
-      "script": [
-        { "speaker": "SPEAKER", "text": "Good evening everyone, and thank you for coming along tonight. Before we start, I do apologise, I know some of the chairs are placed a little close together, we had a much smaller room booked originally so do feel free to shuffle round and make yourselves comfortable." },
-        { "speaker": "SPEAKER", "text": "So, a little about who volunteers with us. People sometimes assume we're looking for young, energetic volunteers only, but honestly, age matters far less to us than reliability, we've had wonderful volunteers in their twenties and in their seventies, what matters is that we can count on you turning up when you say you will." },
-        { "speaker": "SPEAKER", "text": "In terms of training, it isn't just a single session and then you're on your own, that first session covers the basics, but training actually continues well after that, with refresher sessions and on the job guidance from our more experienced volunteers." },
-        { "speaker": "SPEAKER", "text": "Now, before you apply, there are really two things we'd like you to think seriously about. First, your level of commitment, we need people who can stick with a role for at least six months, and second, your availability, particularly whether you can commit to the same day or two each week." },
-        { "speaker": "SPEAKER", "text": "Let me run through the different roles we have. If you enjoy being outdoors and active, dog walking is a great fit, since it really does require a good level of physical fitness, you'll be out for an hour or more at a time. For the reception desk, we're mainly looking for someone comfortable with basic computer skills, you'll be logging visitors and updating our booking system. Fundraising events need volunteers who have comfort speaking to the public, you'll be approaching people directly to explain what we do. If cats are more your thing, cat socialising calls for patience and a calm manner above all, since nervous cats need a gentle, unhurried approach. And finally, if you'd like to help with our adoption listings, that role really depends on having a good camera or phone, since clear photographs make a huge difference to how quickly an animal finds a home." }
-      ],
+      "instructions": "Questions 11–15. Choose the correct letter, A, B or C, or the correct letters for multi-select questions.",
+      "script": [],
       "questions": [
         {
-          "id": 11, "type": "mc",
-          "prompt": "Why does the speaker apologise at the start?",
+          "id": 11,
+          "type": "mc",
+          "prompt": "Why does the speaker apologise about the seats?",
           "options": [
-            { "letter": "A", "label": "The room is too small" },
-            { "letter": "B", "label": "Some chairs are placed very close together" },
-            { "letter": "C", "label": "There are not enough chairs" }
-          ],
-          "answer": "B"
-        },
-        {
-          "id": 12, "type": "mc",
-          "prompt": "What does the speaker say about the age of volunteers?",
-          "options": [
-            { "letter": "A", "label": "Younger volunteers tend to be more reliable" },
-            { "letter": "B", "label": "Most volunteers are in their seventies" },
-            { "letter": "C", "label": "Age matters less than reliability" }
+            {
+              "letter": "A",
+              "label": "They are too small."
+            },
+            {
+              "letter": "B",
+              "label": "There are not enough of them."
+            },
+            {
+              "letter": "C",
+              "label": "Some of them are very close together."
+            }
           ],
           "answer": "C"
         },
         {
-          "id": 13, "type": "mc",
+          "id": 12,
+          "type": "mc",
+          "prompt": "What does the speaker say about the age of volunteers?",
+          "options": [
+            {
+              "letter": "A",
+              "label": "The age of volunteers is less important than other factors."
+            },
+            {
+              "letter": "B",
+              "label": "Young volunteers are less reliable than older ones."
+            },
+            {
+              "letter": "C",
+              "label": "Most volunteers are about 60 years old."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "id": 13,
+          "type": "mc",
           "prompt": "What does the speaker say about training?",
           "options": [
-            { "letter": "A", "label": "It happens only once" },
-            { "letter": "B", "label": "It continues after the first session" },
-            { "letter": "C", "label": "It is done entirely online" }
+            {
+              "letter": "A",
+              "label": "It is continuous."
+            },
+            {
+              "letter": "B",
+              "label": "It is conducted by a manager."
+            },
+            {
+              "letter": "C",
+              "label": "It takes place online."
+            }
           ],
-          "answer": "B"
+          "answer": "A"
         },
         {
-          "id": "14-15", "type": "multi",
-          "prompt": "Which TWO things does the speaker ask volunteers to think about before applying?",
+          "id": "14-15",
+          "type": "multi",
+          "prompt": "Which TWO issues does the speaker ask the audience to consider before they apply to be volunteers?",
           "options": [
-            { "letter": "A", "label": "their level of commitment" },
-            { "letter": "B", "label": "their financial situation" },
-            { "letter": "C", "label": "their work experience" },
-            { "letter": "D", "label": "their availability" },
-            { "letter": "E", "label": "their ambition" }
+            {
+              "letter": "A",
+              "label": "their financial situation"
+            },
+            {
+              "letter": "B",
+              "label": "their level of commitment"
+            },
+            {
+              "letter": "C",
+              "label": "their work experience"
+            },
+            {
+              "letter": "D",
+              "label": "their ambition"
+            },
+            {
+              "letter": "E",
+              "label": "their availability"
+            }
           ],
-          "answer": ["A", "D"]
-        },
-        {
-          "id": "16-20", "type": "matching",
-          "prompt": "Which skill (A–G) most helps with each volunteer role (16–20)? Use each letter once; two letters are not needed.",
-          "options": [
-            { "letter": "A", "label": "experience with children" },
-            { "letter": "B", "label": "physical fitness" },
-            { "letter": "C", "label": "patience and a calm manner" },
-            { "letter": "D", "label": "comfort speaking to the public" },
-            { "letter": "E", "label": "basic computer skills" },
-            { "letter": "F", "label": "a good camera or phone" },
-            { "letter": "G", "label": "weekend availability" }
-          ],
-          "items": [
-            { "id": 16, "label": "Dog walking", "answer": "B" },
-            { "id": 17, "label": "Reception desk", "answer": "E" },
-            { "id": 18, "label": "Fundraising events", "answer": "D" },
-            { "id": 19, "label": "Cat socialising", "answer": "C" },
-            { "id": 20, "label": "Photography for adoption listings", "answer": "F" }
+          "answer": [
+            "B",
+            "E"
           ]
         }
       ]
     },
     {
       "id": 3,
-      "title": "Part 3 — Food-waste survey discussion",
-      "subtitle": "2 speakers, Tom and Sara, discussing a food-waste survey",
-      "accent": "Canadian",
+      "title": "Part 3 — Hugo and Chantal discuss a careers talk",
+      "subtitle": "2 speakers, students discussing a talk on the fashion industry",
+      "accent": "British",
       "audioFile": "/audio/listening-part3.mp3",
-      "instructions": "Questions 21–30. Choose the correct letter, A, B or C, or the correct letters for multi-select questions.",
-      "script": [
-        { "speaker": "TOM", "text": "Sorry I'm a bit late, Sara, I actually couldn't find anywhere to park, the whole car park was full." },
-        { "speaker": "SARA", "text": "No worries, I only just got here myself. So, shall we go through the lecturer's comments on our food waste report?" },
-        { "speaker": "TOM", "text": "Yeah. Honestly, the bit that surprised me most was learning that most of the cafeteria's waste doesn't actually come from what students leave on their plates, it's mostly unsold food that never even gets eaten." },
-        { "speaker": "SARA", "text": "I know, I assumed it'd be the opposite. Anyway, what did you think of the feedback overall?" },
-        { "speaker": "TOM", "text": "It stung a bit, but I think it was accurate, if unwelcome, if I'm honest with myself." },
-        { "speaker": "SARA", "text": "Same. Though I will say, I don't think we fully agree on the careers advice session we complained about earlier this year." },
-        { "speaker": "TOM", "text": "What do you mean? I thought we were on the same page there." },
-        { "speaker": "SARA", "text": "Well, we both agreed it was a problem, but we disagreed about exactly what was wrong with it, you thought it was too generic, I thought it just came too late in the year." },
-        { "speaker": "TOM", "text": "Ah, fair point, that's true actually." },
-        { "speaker": "SARA", "text": "And speaking of careers, have you given more thought to what you want to do?" },
-        { "speaker": "TOM", "text": "A bit. Though we still don't agree on when to commit to a particular path, you think I should decide now, I'd rather keep my options open a while longer." },
-        { "speaker": "SARA", "text": "That's fair enough. How's the internship going, by the way?" },
-        { "speaker": "TOM", "text": "Good, though it's made me realise how common unpaid work experience is in this industry. I've just come to accept it as simply how things are, even if it's not ideal." },
-        { "speaker": "SARA", "text": "I used to feel that way too. Looking back at my own internship, I'll admit I made a couple of mistakes, I worried far too much about how I came across to everyone, and I expected too much responsibility too soon, which frustrated me when it didn't happen." },
-        { "speaker": "TOM", "text": "That's really useful to know, thanks. Anyway, for the follow up survey, what else should we ask students?" },
-        { "speaker": "SARA", "text": "I think we should find out why customers leave food on their plates in the first place, that still isn't clear from this data." },
-        { "speaker": "TOM", "text": "Good idea. And maybe also what time of day most of the unsold food gets thrown away, that could help the cafeteria plan portions better." },
-        { "speaker": "SARA", "text": "Yes, let's add both of those." }
-      ],
+      "instructions": "Questions 21–26. Choose the correct letter, A, B or C.",
+      "script": [],
       "questions": [
         {
-          "id": 21, "type": "mc",
-          "prompt": "What problem did Tom have at the start of the meeting?",
+          "id": 21,
+          "type": "mc",
+          "prompt": "What problem did Chantal have at the start of the talk?",
           "options": [
-            { "letter": "A", "label": "He couldn't find anywhere to park" },
-            { "letter": "B", "label": "He forgot to bring his notes" },
-            { "letter": "C", "label": "He arrived at the wrong building" }
+            {
+              "letter": "A",
+              "label": "Her view of the speaker was blocked."
+            },
+            {
+              "letter": "B",
+              "label": "She was unable to find an empty seat."
+            },
+            {
+              "letter": "C",
+              "label": "The students next to her were talking."
+            }
           ],
           "answer": "A"
         },
         {
-          "id": 22, "type": "mc",
-          "prompt": "What were Tom and Sara surprised to learn about the cafeteria's food waste?",
+          "id": 22,
+          "type": "mc",
+          "prompt": "What were Hugo and Chantal surprised to hear about the job market?",
           "options": [
-            { "letter": "A", "label": "It has increased sharply this year" },
-            { "letter": "B", "label": "Most of it comes from unsold food, not plate scraps" },
-            { "letter": "C", "label": "It costs the university more than expected" }
+            {
+              "letter": "A",
+              "label": "It has become more competitive than it used to be."
+            },
+            {
+              "letter": "B",
+              "label": "There is more variety in it than they had realised."
+            },
+            {
+              "letter": "C",
+              "label": "Some areas of it are more exciting than others."
+            }
           ],
           "answer": "B"
         },
         {
-          "id": 23, "type": "mc",
-          "prompt": "Tom and Sara agree that the lecturer's feedback on their report was",
+          "id": 23,
+          "type": "mc",
+          "prompt": "Hugo and Chantal agree that the speaker's message was",
           "options": [
-            { "letter": "A", "label": "unfair in places" },
-            { "letter": "B", "label": "hard to understand" },
-            { "letter": "C", "label": "accurate, if unwelcome" }
+            {
+              "letter": "A",
+              "label": "unfair to them at times."
+            },
+            {
+              "letter": "B",
+              "label": "hard for them to follow."
+            },
+            {
+              "letter": "C",
+              "label": "critical of the industry."
+            }
           ],
           "answer": "C"
         },
         {
-          "id": 24, "type": "mc",
-          "prompt": "What do Tom and Sara disagree about regarding their school's careers advice?",
+          "id": 24,
+          "type": "mc",
+          "prompt": "What do Hugo and Chantal criticise about their school careers advice?",
           "options": [
-            { "letter": "A", "label": "whether it was useful at all" },
-            { "letter": "B", "label": "exactly what was wrong with it" },
-            { "letter": "C", "label": "who was responsible for giving it" }
-          ],
-          "answer": "B"
-        },
-        {
-          "id": 25, "type": "mc",
-          "prompt": "When discussing their future careers, Tom and Sara disagree on",
-          "options": [
-            { "letter": "A", "label": "which field is the better choice" },
-            { "letter": "B", "label": "when to commit to a particular path" },
-            { "letter": "C", "label": "why a career in sustainability appeals to them" }
-          ],
-          "answer": "B"
-        },
-        {
-          "id": 26, "type": "mc",
-          "prompt": "How does Tom feel about unpaid work experience being common in the industry?",
-          "options": [
-            { "letter": "A", "label": "He accepts it as simply how things are" },
-            { "letter": "B", "label": "He thinks it is dishonest" },
-            { "letter": "C", "label": "He believes most people want to change it" }
+            {
+              "letter": "A",
+              "label": "when they received the advice"
+            },
+            {
+              "letter": "B",
+              "label": "how much advice was given"
+            },
+            {
+              "letter": "C",
+              "label": "who gave the advice"
+            }
           ],
           "answer": "A"
         },
         {
-          "id": "27-28", "type": "multi",
-          "prompt": "Which TWO mistakes does Sara admit she made during her internship?",
+          "id": 25,
+          "type": "mc",
+          "prompt": "When discussing their future, Hugo and Chantal disagree on",
           "options": [
-            { "letter": "A", "label": "being dishonest with her supervisor" },
-            { "letter": "B", "label": "worrying too much about how she came across" },
-            { "letter": "C", "label": "expecting too much responsibility too soon" },
-            { "letter": "D", "label": "spending too much on travel" },
-            { "letter": "E", "label": "missing deadlines" }
+            {
+              "letter": "A",
+              "label": "which is the best career in fashion."
+            },
+            {
+              "letter": "B",
+              "label": "when to choose a career in fashion."
+            },
+            {
+              "letter": "C",
+              "label": "why they would like a career in fashion."
+            }
           ],
-          "answer": ["B", "C"]
+          "answer": "B"
         },
         {
-          "id": "29-30", "type": "multi",
-          "prompt": "Which TWO pieces of information do Tom and Sara agree would be useful to collect?",
+          "id": 26,
+          "type": "mc",
+          "prompt": "How does Hugo feel about being an unpaid assistant?",
           "options": [
-            { "letter": "A", "label": "why customers leave food on their plates" },
-            { "letter": "B", "label": "how much students are willing to pay for meals" },
-            { "letter": "C", "label": "which menu items are thrown away most often" },
-            { "letter": "D", "label": "what time of day most unsold food is discarded" },
-            { "letter": "E", "label": "how food waste compares to other universities" }
+            {
+              "letter": "A",
+              "label": "He is realistic about the practice."
+            },
+            {
+              "letter": "B",
+              "label": "He feels the practice is dishonest."
+            },
+            {
+              "letter": "C",
+              "label": "He thinks others want to change the practice."
+            }
           ],
-          "answer": ["A", "D"]
+          "answer": "A"
         }
       ]
     },
     {
       "id": 4,
-      "title": "Part 4 — Rewilding project lecture",
-      "subtitle": "1 speaker, lecture on a rewilding project",
-      "accent": "Irish",
+      "title": "Part 4 — Elephant translocation",
+      "subtitle": "1 speaker, lecture on moving elephants between parks",
+      "accent": "British",
       "audioFile": "/audio/listening-part4.mp3",
-      "instructions": "Questions 31–40. Complete the summary below. Write ONE WORD ONLY for each answer.",
-      "script": [
-        { "speaker": "LECTURER", "text": "Good morning everyone. Today I want to talk about one of the most successful rewilding projects in the region, the return of beavers to our local river system." },
-        { "speaker": "LECTURER", "text": "Beavers were hunted to extinction here over a century ago, largely for their fur, but also for a glandular substance called castoreum, which was once highly valued in perfumery and medicine." },
-        { "speaker": "LECTURER", "text": "Without beavers shaping the landscape, the river gradually lost its natural ability to manage flooding, since the dams and wetlands beavers create had always acted as a kind of natural buffer during heavy rainfall." },
-        { "speaker": "LECTURER", "text": "Before any animals were introduced, the project team spent two full years recording a baseline of the existing wildlife in the area, so that any future changes could be properly measured against it." },
-        { "speaker": "LECTURER", "text": "The beavers themselves came from a wild population in a neighbouring country, where numbers had recovered enough to allow a small number to be relocated." },
-        { "speaker": "LECTURER", "text": "Once they arrived, the animals were kept in quarantine for several weeks before release, purely as a precaution, to make sure none of them were carrying disease." },
-        { "speaker": "LECTURER", "text": "Each beaver was also fitted with a tracking collar, so the team could follow their movements and check on how well they were settling into their new territory." },
-        { "speaker": "LECTURER", "text": "Within just a couple of years, the dams they built were already slowing the flow of water during storms, reducing the kind of sudden flooding that used to affect farmland downstream." },
-        { "speaker": "LECTURER", "text": "The still, calm pools that formed behind the dams also supported noticeably more insect life, which in turn benefited fish and birds further up the food chain." },
-        { "speaker": "LECTURER", "text": "As word spread locally, the project saw a real rise in tourism too, with visitors coming specifically to see the dams and, if they're lucky, the beavers themselves at dawn or dusk." },
-        { "speaker": "LECTURER", "text": "Looking ahead, the team's main priority now is securing long-term funding, since monitoring a project like this properly doesn't stop once the animals are released, it really only just begins." }
-      ],
+      "instructions": "Questions 31–40. Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "script": [],
       "questions": [
-        { "id": 31, "type": "gap", "prompt": "Beavers were hunted for their fur and for a substance called ______, once used in perfumery and medicine.", "answer": "castoreum" },
-        { "id": 32, "type": "gap", "prompt": "Without beavers, the river lost its natural ability to manage ______.", "answer": "flooding" },
-        { "id": 33, "type": "gap", "prompt": "The team spent two years recording a ______ of existing wildlife before any beavers were introduced.", "answer": "baseline" },
-        { "id": 34, "type": "gap", "prompt": "The beavers were relocated from a wild population in a neighbouring ______.", "answer": "country" },
-        { "id": 35, "type": "gap", "prompt": "On arrival, the beavers were kept in ______ for several weeks as a precaution.", "answer": "quarantine" },
-        { "id": 36, "type": "gap", "prompt": "Each beaver was fitted with a tracking ______.", "answer": "collar" },
-        { "id": 37, "type": "gap", "prompt": "Within a couple of years, the dams were already slowing the ______ of water during storms.", "answer": "flow" },
-        { "id": 38, "type": "gap", "prompt": "The calm pools behind the dams supported more ______ life.", "answer": "insect" },
-        { "id": 39, "type": "gap", "prompt": "The project also saw a rise in local ______.", "answer": "tourism" },
-        { "id": 40, "type": "gap", "prompt": "The team's main priority now is securing long-term ______.", "answer": "funding" }
+        {
+          "id": 31,
+          "type": "gap",
+          "prompt": "Problems caused by elephant overpopulation: damage to ______ in the park",
+          "answer": "fences"
+        },
+        {
+          "id": 32,
+          "type": "gap",
+          "prompt": "A suitable group of elephants from the same ______ was selected",
+          "answer": "family"
+        },
+        {
+          "id": 33,
+          "type": "gap",
+          "prompt": "Vets and park staff made use of ______ to help guide the elephants into an open plain",
+          "answer": "helicopters"
+        },
+        {
+          "id": 34,
+          "type": "gap",
+          "prompt": "Elephants were immobilised with tranquilisers — this had to be completed quickly to reduce ______",
+          "answer": "stress"
+        },
+        {
+          "id": 35,
+          "type": "gap",
+          "prompt": "Elephants had to be turned on their ______ to avoid damage to their lungs",
+          "answer": "sides"
+        },
+        {
+          "id": 36,
+          "type": "gap",
+          "prompt": "Elephants' ______ had to be monitored constantly",
+          "answer": "breathing"
+        },
+        {
+          "id": 37,
+          "type": "gap",
+          "prompt": "Data including the size of their tusks and ______ was taken",
+          "answer": "feet"
+        },
+        {
+          "id": 38,
+          "type": "gap",
+          "prompt": "Advantages of translocation at Nkhotakota Wildlife Park: ______ opportunities",
+          "answer": "employment"
+        },
+        {
+          "id": 39,
+          "type": "gap",
+          "prompt": "A reduction in the number of poachers and ______",
+          "answer": "weapons"
+        },
+        {
+          "id": 40,
+          "type": "gap",
+          "prompt": "An increase in ______ as a contributor to GDP",
+          "answer": "tourism"
+        }
       ]
     }
   ]
