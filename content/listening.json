@@ -238,7 +238,7 @@
       "subtitle": "2 speakers, students discussing a talk on the fashion industry",
       "accent": "British",
       "audioFile": "/audio/listening-part3.mp3",
-      "instructions": "Questions 21–26. Choose the correct letter, A, B or C.",
+      "instructions": "Questions 21–30. Choose the correct letter, A, B or C, or the correct letters for multi-select questions.",
       "script": [],
       "questions": [
         {
@@ -360,6 +360,68 @@
             }
           ],
           "answer": "A"
+        },
+        {
+          "id": "27-28",
+          "type": "multi",
+          "prompt": "Which TWO mistakes did the speaker admit she made in her first job?",
+          "options": [
+            {
+              "letter": "A",
+              "label": "being dishonest to her employer"
+            },
+            {
+              "letter": "B",
+              "label": "paying too much attention to how she looked"
+            },
+            {
+              "letter": "C",
+              "label": "expecting to become well known"
+            },
+            {
+              "letter": "D",
+              "label": "trying to earn a lot of money"
+            },
+            {
+              "letter": "E",
+              "label": "openly disliking her client"
+            }
+          ],
+          "answer": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "id": "29-30",
+          "type": "multi",
+          "prompt": "Which TWO pieces of retail information do Hugo and Chantal agree would be useful?",
+          "options": [
+            {
+              "letter": "A",
+              "label": "the reasons people return fashion items"
+            },
+            {
+              "letter": "B",
+              "label": "how much time people have to shop for clothes"
+            },
+            {
+              "letter": "C",
+              "label": "fashion designs people want but can't find"
+            },
+            {
+              "letter": "D",
+              "label": "the best time of year for fashion buying"
+            },
+            {
+              "letter": "E",
+              "label": "the most popular fashion sizes"
+            }
+          ],
+          "answer": [
+            "A",
+            "C"
+          ]
         }
       ]
     },
